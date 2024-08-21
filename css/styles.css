@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.corpo-fundo{
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.corpo-fundo-ia {
+    background-image: url('../img/fundoIA.jpg');
+}
+
+.corpo-fundo-des {
+    background-image: url('../img/fundoDesenv.jpg');
+}
+.content {
+    width: 100%;
+    margin: auto auto;
+    background: rgb(255 255 255 / 0%);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+        & .content-images{
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            flex-wrap: nowrap;
+
+
+        }
+}
+.content-images .ia {
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content-images .desenv {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ia img {
+    width: calc(100% + 20px); 
+    height: auto;
+}
+
+.desenv img {
+    width: calc(120% + 20px); 
+    height: auto;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
